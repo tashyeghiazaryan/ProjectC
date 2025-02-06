@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "tashyeghiazaryan" => "artashes.yeghiazaryan@gmail.com" }
   
   # Specify the source URL for the zip archive on GitHub.
-  spec.source       = { :http => "https://github.com/tashyeghiazaryan/ProjectC/releases/download/v1.0.0/ProjectC.xcframework.zip" }
+  spec.source       = { :http => "https://github.com/tashyeghiazaryan/ProjectC/releases/downloads/v1.0.0/ProjectC.xcframework.zip" }
   
   # This tells CocoaPods that the framework is provided pre-built.
   spec.vendored_frameworks = "ProjectC.xcframework"
