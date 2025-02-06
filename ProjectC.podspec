@@ -1,26 +1,23 @@
 Pod::Spec.new do |spec|
   spec.name         = "ProjectC"
   spec.version      = "1.0.0"
-  spec.summary      = "Project C Framework"
-  spec.description  = "A reusable framework for AI and MLKit."
+  spec.summary      = "ProjectC is an XCFramework supporting iOS, iOS Simulator, and macOS."
+  
+  spec.description  = <<-DESC
+    ProjectC is designed to be distributed as an XCFramework. This version supports iOS devices, the iOS simulator, and macOS.
+  DESC
+  
   spec.homepage     = "https://github.com/tashyeghiazaryan/ProjectC"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author       = { "Your Name" => "your-email@example.com" }
-  spec.source       = { :git => "https://github.com/tashyeghiazaryan/ProjectC.git", :tag => "1.0.0" }
-
-  spec.platform     = :ios, "13.0"
+  spec.author       = { "tashyeghiazaryan" => "artashes.yeghiazaryan@gmail.com" }
+  
+  # Specify the source URL for the zip archive on GitHub.
+  spec.source       = { :http => "https://github.com/tashyeghiazaryan/ProjectC/releases/download/v1.0.0/ProjectC.xcframework.zip" }
+  
+  # This tells CocoaPods that the framework is provided pre-built.
+  spec.vendored_frameworks = "ProjectC.xcframework"
+  
+  # Specify platform requirements.
+  spec.platform     = :ios, "10.0"
   spec.requires_arc = true
-
-  spec.source_files = "ProjectC/**/*.{h,m}"
-  spec.public_header_files = "ProjectC/**/*.h"
-
-  # If ProjectC is a framework, use this:
-  spec.source_files = "ProjectC/**/*.{h,m}"
-  spec.public_header_files = "ProjectC/**/*.h"
-
-  spec.static_framework = true
-
-
-  # Add dependencies if needed
-  spec.dependency "GoogleMLKit/TextRecognition"
 end
