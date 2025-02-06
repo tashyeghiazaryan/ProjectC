@@ -1,26 +1,23 @@
 Pod::Spec.new do |spec|
   spec.name         = "ProjectC"
   spec.version      = "1.0.0"
-  spec.summary      = "ProjectC is an XCFramework supporting iOS, iOS Simulator, and macOS."
+  spec.summary      = "ProjectC XCFramework for iOS and macOS."
   
-  spec.description  = <<-DESC
-    ProjectC is designed to be distributed as an XCFramework. This version supports iOS devices, the iOS simulator, and macOS.
-  DESC
-
+  spec.description  = "ProjectC is an XCFramework for iOS devices, the iOS simulator, and macOS."
   spec.homepage     = "https://github.com/tashyeghiazaryan/ProjectC"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author       = { "tashyeghiazaryan" => "artashes.yeghiazaryan@gmail.com" }
+  spec.author       = { "Tash Yegiazaryan" => "your.email@example.com" }
   
-  # Reference the zipped XCFramework
+  # Reference the prebuilt XCFramework
   spec.source       = { :http => "https://github.com/tashyeghiazaryan/ProjectC/releases/download/v1.0.0/ProjectC.xcframework.zip" }
 
-  # Specify vendored framework
+  # Use vendored_frameworks instead of source_files
   spec.vendored_frameworks = "ProjectC.xcframework"
 
-  # Public headers (if applicable)
-  spec.public_header_files = "ProjectC.xcframework/Headers/*.h"
+  # Explicitly declare the headers path
+  spec.public_header_files = "ProjectC.xcframework/**/*.h"
 
-  # Specify module map if necessary
+  # Ensure modulemap is included
   spec.module_map = "ProjectC.xcframework/Modules/module.modulemap"
 
   # Platform settings
