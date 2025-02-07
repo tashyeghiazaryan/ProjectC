@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6757011C5F42AACF82774B38 /* Pods_ProjectC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D58214BE29895B6538AFB4 /* Pods_ProjectC.framework */; };
-		C5B3AC562D4FC2F900EB81B3 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = C5B3AC552D4FC2F800EB81B3 /* Constants.h */; };
+		EB8DD68A2D565DD20046199F /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8DD6892D565DD20046199F /* Constants.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,7 +16,7 @@
 		35A0A40AB6648FEE9E1C76F8 /* Pods-ProjectC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectC.release.xcconfig"; path = "Target Support Files/Pods-ProjectC/Pods-ProjectC.release.xcconfig"; sourceTree = "<group>"; };
 		5654C2968815D4A97F9DEF05 /* Pods-ProjectC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectC.debug.xcconfig"; path = "Target Support Files/Pods-ProjectC/Pods-ProjectC.debug.xcconfig"; sourceTree = "<group>"; };
 		C5B3AC482D4FC2E000EB81B3 /* ProjectC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProjectC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5B3AC552D4FC2F800EB81B3 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = SOURCE_ROOT; };
+		EB8DD6892D565DD20046199F /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../SharedFolder/Constants.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -73,7 +73,7 @@
 		C5B3AC3E2D4FC2E000EB81B3 = {
 			isa = PBXGroup;
 			children = (
-				C5B3AC552D4FC2F800EB81B3 /* Constants.h */,
+				EB8DD6892D565DD20046199F /* Constants.h */,
 				C5B3AC4A2D4FC2E000EB81B3 /* ProjectC */,
 				C5B3AC492D4FC2E000EB81B3 /* Products */,
 				3AE596C6965114BCDE777DBA /* Pods */,
@@ -96,7 +96,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B3AC562D4FC2F900EB81B3 /* Constants.h in Headers */,
+				EB8DD68A2D565DD20046199F /* Constants.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,10 +226,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5654C2968815D4A97F9DEF05 /* Pods-ProjectC.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = RCM82X5MZ7;
+				DEVELOPMENT_TEAM = 757V4T6R75;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -259,10 +260,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35A0A40AB6648FEE9E1C76F8 /* Pods-ProjectC.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = RCM82X5MZ7;
+				DEVELOPMENT_TEAM = 757V4T6R75;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
