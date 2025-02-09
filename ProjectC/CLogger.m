@@ -18,4 +18,8 @@
     return [NSString stringWithFormat:@"from C - URL = %s", API_URL];
 }
 
+- (NSInteger)getAnyNumber {
+    return 9;
+}
+
 @end
